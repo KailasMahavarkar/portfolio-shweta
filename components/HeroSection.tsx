@@ -3,7 +3,8 @@ import React from "react"
 import Image from "next/image"
 import { HiArrowDown } from "react-icons/hi"
 import env from "@/env"
-import { Link } from "react-scroll/modules"
+import { Link as Linker } from "react-scroll/modules"
+const Link = Linker as any;
 
 const HeroSection = () => {
     return (

@@ -2,9 +2,7 @@ import env from "@/env"
 import React from "react"
 import {
     AiOutlineGithub,
-    AiOutlineTwitter,
     AiOutlineLinkedin,
-    AiOutlineYoutube,
     AiOutlineInstagram,
     AiOutlineCode,
 } from "react-icons/ai"
