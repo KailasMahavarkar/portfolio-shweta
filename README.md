@@ -1,6 +1,6 @@
 # Tailwind CSS and Next.js Portfolio
 
-This is porfolio webapp created using Only NextJS by shweta saindane
+This is porfolio webapp created using NextJS + TailwindCSS by shweta saindane
 
 ## Live Link
 https://shwetasaindane.netlify.app
