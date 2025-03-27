@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.elastic {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: 1;
+	display: inline-flex;
+}
+.elastic:hover {
+	color: #ff4c29;
+	animation-name: rubberBand;
+}

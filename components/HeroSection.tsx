@@ -1,0 +1,62 @@
+"use client" // this is a client component
+import React from "react"
+import Image from "next/image"
+import { HiArrowDown } from "react-icons/hi"
+import env from "@/env"
+import { Link } from "react-scroll/modules"
+
+const HeroSection = () => {
+    return (
+        <section id="home">
+            <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
+                <div className="md:mt-2 group rounded-full overflow-hidden relative md:mr-auto">
+                    <Image
+                        src="/shweta_stairs.jpeg"
+                        alt="Shweta at Stairs"
+                        width={325}
+                        height={325}
+                        className="transform scale-100 group-hover:scale-110 transition-transform duration-500 ease-in-out"
+                    />
+                </div>
+                <div className="md:mt-2 md:w-3/5">
+                    <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
+                        Hi, I&#39;m {env.NAME}!
+                    </h1>
+                    <p className="text-lg mt-4 mb-6 md:text-2xl">
+                        I&#39;m a{" "}
+                        <span className="font-semibold text-teal-600">
+                            Software Engineer{" "}
+                        </span>
+                        based in {env.LOCATION}. Working towards creating software that
+                        makes life easier and more meaningful.
+                    </p>
+                    <Link
+                        to="projects"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        className="text-neutral-100 cursor-pointer font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+                    >
+                        Projects
+                    </Link>
+                </div>
+            </div>
+            <div className="flex flex-row items-center text-center justify-center ">
+                <Link
+                    to="about"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                >
+                    <HiArrowDown size={35} className="animate-bounce" />
+                </Link>
+            </div>
+        </section>
+    )
+}
+
+export default HeroSection
