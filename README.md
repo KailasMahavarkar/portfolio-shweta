@@ -16,6 +16,6 @@ yarn run dev
 ```
 
 ## Project data:
-https://raw.githubusercontent.com/KailasMahavarkar/config/shweta-saindane/portfolio.json
+https://raw.githubusercontent.com/KailasMahavarkar/config/main/shweta_portfolio.json
 
 
