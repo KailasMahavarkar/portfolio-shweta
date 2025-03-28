@@ -3,7 +3,7 @@
 This is porfolio webapp created using NextJS + TailwindCSS by shweta saindane
 
 ## Live Link
-https://shwetasaindane.netlify.app
+https://shwetasaindane.vercel.app
 
 
 ## Running Locally
